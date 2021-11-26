@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="T2009M1NguyenCuongUWP.Pages.ContactForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T2009M1NguyenCuongUWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock Text="Add Contact" Margin="20 0 0 0"/>
+        <NavigationViewItemSeparator Margin="0 30 0 0"/>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBox Header="Name" x:Name="txtName"  Width="350"/>
+            <TextBox Header="PhoneNumber" x:Name="txtPhoneNumber" Width="350" Margin="0 20 0 0"/>
+            <Button Content="Add Contact" Click="Add_Contact"  Width="350" Margin="0 20 0 0"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
